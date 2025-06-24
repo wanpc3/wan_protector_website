@@ -1,4 +1,3 @@
-// Function to include appbar in all pages
 function includeAppbar() {
     const header = document.createElement('header');
     header.classList.add('appbar');
@@ -15,12 +14,21 @@ function includeAppbar() {
     document.body.prepend(header);
 }
 
-// Call the function when page loads
-window.onload = function() {
-    includeAppbar();
-};
-
 function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.classList.toggle('active');
 }
+
+// Close menu on link click (mobile/tablet only)
+document.addEventListener("click", function(e) {
+    if (e.target.closest('.nav-links a')) {
+        const nav = document.getElementById('navLinks');
+        if (window.innerWidth <= 768 && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+        }
+    }
+});
+
+window.onload = function() {
+    includeAppbar();
+};
