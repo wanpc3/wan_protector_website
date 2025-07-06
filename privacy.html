@@ -12,8 +12,8 @@
     <!--Terms of Service header-->
     <div id="privacy_0" class="section">
         <h1>Privacy Policy</h1>
-        <p><i>Effective Date: May 1, 2025</i></p>
-        <p><i>last Updated: May 1, 2025</i></p>
+        <p><i>Effective Date: June 1, 2025</i></p>
+        <p><i>last Updated: June 1, 2025</i></p>
         <p><i>Developer: ILHAN IDRISS</i></p>
         <p><i>Contact Email: idrissilhan@gmail.com</i></p>
     </div>
@@ -34,7 +34,7 @@
     <!-- 3. How We Use Your Information -->
     <div id="privacy_3" class="section">
         <h1>3. How We Use Your Information</h1>
-        <p>We use the collected information for the following purposes:</p>
+        <p>We use the collected information (Master Password) for the following purposes:</p>
         <ul>
             <li>To authenticate users and provide access to their secured data</li>
             <li>To ensure proper functioning and user experience of the app</li>
@@ -45,8 +45,10 @@
     <!-- 4. Data Security and Storage -->
     <div id="privacy_4" class="section">
         <h1>4. Data Security and Storage</h1>
-        <p>We implement industry-standard encryption practices, including strong local encryption, to ensure that user passwords and sensitive data are stored securely. We never store plaintext passwords, and the developer has no access to your master password or stored vault contents.</p>
-        <p>We do not use external analytics, tracking technologies, or advertising SDKs. All password data remains local unless backed up via Google (with user permission).</p>
+        <p>We implement strong, industry-standard encryption techniques to protect your data. All sensitive information, such as master password, entry's username, entry's password, and notes are encrypted using AES-256 in CBC mode, with a unique Initialization Vector (IV) generated for every encryption operation. This ensures that even identical data is encrypted differently each time.</p>
+        <p>To maintain data integrity and prevent tampering, we apply HMAC-SHA256 authentication. Encryption keys are securely generated and stored on your device using platform-specific secure storage (Android Keystore or iOS Keychain). We never store plaintext passwords, and the developer has no access to your master password or any of your vault data.</p>
+        <p>Your data remains strictly on your device. We do not use external analytics tools, advertising SDKs, or any form of tracking. If you choose to back up your encrypted data to Google Drive or another provider, it is done entirely at your discretion and remains unreadable by the developer.</p>
+        <p>We also employ constant-time comparisons to guard against timing attacks and provide key backup functionality to support secure migration or recovery across devices.</p>
     </div>
 
     <!-- 5. Children’s Privacy -->
