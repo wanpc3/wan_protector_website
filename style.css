@@ -1,3 +1,47 @@
+.wan-protector {
+    text-align: center;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-family: inherit;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #424242;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Index Page Styles */
 #main_menu h1 {
     font-family: Arial;
@@ -39,7 +83,7 @@ body {
 
 /* AppBar Styles */
 .appbar {
-    background-color: #2c3e50;
+    background-color: #424242;
     padding: 1rem 2rem;
     color: white;
     position: sticky;
@@ -113,6 +157,27 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
     .appbar {
         padding: 0.8rem 1rem;
     }
@@ -122,7 +187,7 @@ body {
         top: 60px;
         left: 0;
         right: 0;
-        background-color: #2c3e50;
+        background-color: #424242;
         flex-direction: column;
         transition: all -.3s ease;
         gap: 0;
@@ -138,7 +203,7 @@ body {
     }
     
     .nav-links a:hover {
-        background-color: #34495e;
+        background-color: #424242;
     }
     
     .nav-links.active {
