@@ -6,6 +6,7 @@ function includeAppbar() {
             <a href="index.html" class="app-title">WanProtector</a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <nav class="nav-links" id="navLinks">
+                <!--
                 <div class="dropdown">
                     <button class="dropbtn">App ▾</button>
                     <div class="dropdown-content">
@@ -13,6 +14,7 @@ function includeAppbar() {
                         <a href="#">Screenshots</a>
                     </div>
                 </div>
+                -->
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Service</a>
             </nav>
